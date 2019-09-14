@@ -24,6 +24,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        commmsgshow.cpp
+        commmsgshow.cpp \
+    JSON/cJSON.c \
+    TinyXmlParse/tinystr.cpp \
+    TinyXmlParse/tinyxml.cpp \
+    TinyXmlParse/tinyxmlerror.cpp \
+    TinyXmlParse/tinyxmlparser.cpp
 
-HEADERS  += commmsgshow.h
+HEADERS  += commmsgshow.h \
+    JSON/cJSON.h \
+    TinyXmlParse/tinystr.h \
+    TinyXmlParse/tinyxml.h
