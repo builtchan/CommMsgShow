@@ -695,6 +695,7 @@ bool CUIConfig::dealManageAction(QAction *pAction)
         m_pShowTextEdit->append(QObject::tr("<font color=green><b>remark</b></font> 备注"));
         m_pShowTextEdit->append(QObject::tr("<font color=green><b>length</b></font> 占用字节数，小于等于0时，只显示remark"));
         m_pShowTextEdit->append(QObject::tr("<font color=green><b>bigEndian</b></font> 是否是大端数据，默认小端数据。值为true或者false，type为2、3、4、5时可用"));
+        m_pShowTextEdit->append(QObject::tr("<font color=green><b>reverse</b></font> 对数组进行翻转解析。暂用于按位处理时，配置反了的情况，比如正常是0-7，但是配成7-0了。"));
         m_pShowTextEdit->append(QObject::tr("<font color=green><b>lengthType</b></font> 数字转换类型 1：整型（7B 00） 2：BCD（01 23） 3：Asiic（31 32 33）。type为2、3、4时使用,没配置默认为整型处理。"));
         m_pShowTextEdit->append(QObject::tr("<font color=green><b>index</b></font> type为3、4、5时使用，用于指定整数字段的相对位置，对应解析成循环体个数或者长度"));
         m_pShowTextEdit->append(QObject::tr("<font color=green><b>loopNum</b></font> type为3时使用，当没有循环体个数字段时使用,该值可以大于实际循环体数量"));
@@ -839,6 +840,7 @@ void CUIConfig::onMenuAction(QAction *pAction)
 
             CTextParse textParse;
             QString strShow;
+            m_pShowTextEdit->clear();
             m_pShowTextEdit->setText(QString("<font size='+2'><font color=red><b>%1</b></font></font>\n").arg(pAction->objectName()));
             if(textParse.parseDataByJSONFile(getCurrentPath()+ "/Config/" + pAction->toolTip(),pAction->statusTip(),m_pSourceTextEdit->toPlainText(),strShow))
                 m_pShowTextEdit->append(strShow);

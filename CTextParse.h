@@ -42,7 +42,7 @@ typedef enum
 //json中协议段 单个有效块的配置
 struct ST_PROTOCOL_DETAIL
 {
-    ST_PROTOCOL_DETAIL():iIsBigEndian(-1),emTextType(EM_TEXT_TYPE_RAW),emLenType(EM_LENGTH_TYPE_UNKNOWM),iIndex(0),iLoopNum(-1){}
+    ST_PROTOCOL_DETAIL():emTextType(EM_TEXT_TYPE_RAW),iIsBigEndian(-1),emLenType(EM_LENGTH_TYPE_UNKNOWM),iIndex(0),iLoopNum(-1),bReverse(false){}
     QString strPrintName;       //字段表示名称（必须）
     QString strRemark;           //备注
     int iLen;                   //占用字节长度（必须）
@@ -53,6 +53,7 @@ struct ST_PROTOCOL_DETAIL
     int iIndex;                 //不定长和循环体类型 用于指定长度数据或者循环次数字段的位置
     int iIsBigEndian;           //大小端，转换成整型时需要用到，-1没有，0不是，1是
     int iLoopNum;               //指定循环体个数
+    bool bReverse;               //翻转处理
 };
 
 //报文格式  json文件每次都重新加载

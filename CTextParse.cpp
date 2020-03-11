@@ -309,12 +309,25 @@ EM_TEXT_PARSE_RESULT CTextParse::oneBlockFormatParse(QJsonObject &jsonObject,QLi
         QJsonValue value(jsonObject.take("bigEndian"));
         if(QJsonValue::Type::Bool != value.type())
         {
-            m_strErrorStr = QString("index bool类型");
+            m_strErrorStr = QString("bigEndian bool类型");
             qDebug() << m_strErrorStr;
             return EM_TEXT_PARSE_RESULT_JSON_INNER_FORMAT_ERROR;
         }
         stProtocalDetail.iIsBigEndian = value.toBool();
         qDebug() << "iIsBigEndian" << stProtocalDetail.iIsBigEndian;
+    }
+
+    if(jsonObject.contains("reverse"))
+    {
+        QJsonValue value(jsonObject.take("reverse"));
+        if(QJsonValue::Type::Bool != value.type())
+        {
+            m_strErrorStr = QString("reverse bool类型");
+            qDebug() << m_strErrorStr;
+            return EM_TEXT_PARSE_RESULT_JSON_INNER_FORMAT_ERROR;
+        }
+        stProtocalDetail.bReverse = value.toBool();
+        qDebug() << "reverse" << stProtocalDetail.bReverse;
     }
 
     if(jsonObject.contains("lengthType"))
@@ -408,6 +421,8 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
     int iIndex = NO_INDEX;
     //数据
     QJsonValue *pArray = NULL;
+    //数组翻转解析
+    bool bReverse = false;
 
     //对应字段内部解析类型（必须）
     if(jsonObject.contains("type"))
@@ -541,6 +556,13 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
         QJsonValue value(jsonObject.take("bigEndian"));
         if(QJsonValue::Type::Bool == value.type())
             bIsBigEndian = value.toBool();
+    }
+    //翻转
+    if(jsonObject.contains("reverse"))
+    {
+        QJsonValue value(jsonObject.take("reverse"));
+        if(QJsonValue::Type::Bool == value.type())
+            bReverse = value.toBool();
     }
 
     if(bIsDealBit)
@@ -753,9 +775,11 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
 
             for(int j = 0; j < 8; j++)
             {
-                sprintf(pBuf,"%s%02x%s",pBuf,((ucTemp >> j) & 0x1),(EM_TEXT_FORMAT_HEXHEX==emTextFormat)?"":" ");
+                if(bReverse)
+                    sprintf(pBuf,"%s%02x%s",pBuf,((ucTemp >> (8 - j - 1)) & 0x1),(EM_TEXT_FORMAT_HEXHEX==emTextFormat)?"":" ");
+                else
+                    sprintf(pBuf,"%s%02x%s",pBuf,((ucTemp >> j) & 0x1),(EM_TEXT_FORMAT_HEXHEX==emTextFormat)?"":" ");
             }
-
         }
         qDebug() << "pBuf" << pBuf;
         strOutPrintData.append("\n");
@@ -854,6 +878,11 @@ bool CTextParse::genOneBlockJson(QJsonArray &mainArray,const QList<ST_PROTOCOL_D
         {
             QJsonValue value((bool)stProtocolList.at(i).iIsBigEndian);
             jsonObj.insert("bigEndian",value);
+        }
+        if(stProtocolList.at(i).bReverse)
+        {
+            QJsonValue value((bool)stProtocolList.at(i).bReverse);
+            jsonObj.insert("reverse",value);
         }
         //循环体  变长
         if(EM_TEXT_TYPE_LOOP_NUM == stProtocolList.at(i).emTextType
