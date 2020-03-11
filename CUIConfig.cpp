@@ -26,10 +26,10 @@
 CUIConfig::CUIConfig(QWidget *parent) : QMainWindow(parent)
 {
     setWindowTitle("数据解析工具1.0  by chenjc");
-    m_pStackWidget = new QStackedWidget(this);
-    m_pParseWidget = new QStackedWidget(this);
-    m_pManagerWidget = new QStackedWidget(this);
-    m_pDealJsonWidget = new QStackedWidget(this);
+//    m_pStackWidget = new QStackedWidget(this);
+//    m_pParseWidget = new QStackedWidget(this);
+//    m_pManagerWidget = new QStackedWidget(this);
+//    m_pDealJsonWidget = new QStackedWidget(this);
 
     m_pSourceTextEdit = new CMyTextEdit(this);
     m_pShowTextEdit = new QTextEdit(this);
@@ -93,16 +93,10 @@ void CUIConfig::initUI()
     }
 
     this->setGeometry(400,200,m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
-    m_pParseWidget->setGeometry(0,0,m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
-    m_pManagerWidget->setGeometry(0,0,m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
-    m_pDealJsonWidget->setGeometry(0,0,m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
+//    m_pParseWidget->setGeometry(0,0,m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
+//    m_pManagerWidget->setGeometry(0,0,m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
+//    m_pDealJsonWidget->setGeometry(0,0,m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
     this->setFixedSize(m_stUIConfig.iWidth,m_stUIConfig.iHeigth);
-
-    m_pStackWidget = new QStackedWidget(this);
-    m_pParseWidget = new QStackedWidget(this);
-    m_pManagerWidget = new QStackedWidget(this);
-    m_pDealJsonWidget = new QStackedWidget(this);
-
 
     m_pSourceTextEdit->setGeometry(2,33,m_stUIConfig.iWidth-4,(m_stUIConfig.iHeigth - 40) / 2);
     m_pShowTextEdit->setGeometry(2,m_stUIConfig.iHeigth/2 + 18,m_stUIConfig.iWidth-4,(m_stUIConfig.iHeigth - 40) / 2);
