@@ -450,10 +450,10 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
             return false;
         }
         strName = value.toString();
-        if(strName.length())
-            strOutPrintData.append(strName + " : ");
+        if(strName.length() > 0)
+            strOutPrintData.append(QString("<font color=red>%1</font>:").arg(strName));
         else
-            strOutPrintData.append("\n");
+            strOutPrintData.append("<br/>");
     }
     else if(emTextType != EM_TEXT_TYPE_UNCERTAIN_LEN)
     {
@@ -520,15 +520,16 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
         if(iLen*emTextFormat > iLeftTextLen)
         {
             if(strRemark.isEmpty())
-                strOutPrintData.append(QString(pszSourceText+iDealIndex) + "\n");
+                strOutPrintData.append(QString(pszSourceText+iDealIndex) + "<br/>");
             else
-                strOutPrintData.append(QString(pszSourceText+iDealIndex) + " (" + strRemark + ")\n");
+                strOutPrintData.append(QString(pszSourceText+iDealIndex) + QString("(<font color=green>%1</font>)<br/>)").arg(strRemark));
             iLeftTextLen -= (iLen*emTextFormat);
             return true;
         }
-        else if(0 >= iLen)
+        else if(0 >= iLen && emTextType <= EM_TEXT_TYPE_INT)
         {
-            strOutPrintData.append(" (" + strRemark + ")\n");
+            if(!strRemark.isEmpty())
+                strOutPrintData.append(QString("(<font color=green>%1</font>)<br/>)").arg(strRemark));
             return true;
         }
     }
@@ -569,7 +570,7 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
     {
         qDebug() << "按位处理" << iLen;
         unsigned long long llBit = text2Integer(iLen,emTextFormat,EM_LENGTH_TYPE_BIT,pszSourceText + iDealIndex ,!bIsBigEndian);
-        strOutPrintData.append(QString("%1\n").arg(llBit));
+        strOutPrintData.append(QString("%1<br/>").arg(llBit));
         iDealIndex += iLen *emTextFormat;
         iLeftTextLen -= iLen *emTextFormat;
         qDebug() << "该位数据" << llBit;
@@ -605,9 +606,9 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
     {
         iLeftTextLen -= iLen*emTextFormat;
         if(strRemark.length())
-            strOutPrintData.append(QString(pszSourceText+iDealIndex).left(iLen * emTextFormat) + " (" + strRemark + ")\n");
+            strOutPrintData.append(QString(pszSourceText+iDealIndex).left(iLen * emTextFormat) + QString("(<font color=green>%1</font>)<br/>").arg(strRemark));
         else
-            strOutPrintData.append(QString(pszSourceText+iDealIndex).left(iLen * emTextFormat) +  "\n");
+            strOutPrintData.append(QString(pszSourceText+iDealIndex).left(iLen * emTextFormat) +  "<br/>");
         iDealIndex += iLen * emTextFormat;
     }
     //2 可转成字符串显示
@@ -623,9 +624,9 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
         }
 
         if(strRemark.length())
-            strOutPrintData.append("{ " + QString(pTemp) + " } (" + strRemark + " )\n");
+            strOutPrintData.append(QString("<font color=blue>\"%1\"</font>(<font color=green>%2</font>)<br/>").arg(pTemp).arg(strRemark));
         else
-            strOutPrintData.append("{ " + QString(pTemp) + " }\n");
+            strOutPrintData.append(QString("<font color=blue>\"%1\"</font><br/>").arg(pTemp));
         delete [] pTemp;
     }
     //3
@@ -634,9 +635,9 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
         iLeftTextLen -= iLen*emTextFormat;
 
         if(strRemark.length())
-            strOutPrintData.append(QString("%1 (%2)\n").arg(text2Integer(iLen,emTextFormat,emLengthType,pszSourceText + iDealIndex,!bIsBigEndian)).arg(strRemark));
+            strOutPrintData.append(QString("<font color=#A020F0>%1</font>(<font color=green>%2</font>)<br/>").arg(text2Integer(iLen,emTextFormat,emLengthType,pszSourceText + iDealIndex,!bIsBigEndian)).arg(strRemark));
         else
-            strOutPrintData.append(QString("%1\n").arg(text2Integer(iLen,emTextFormat,emLengthType,pszSourceText + iDealIndex,!bIsBigEndian)));
+            strOutPrintData.append(QString("<font color=#A020F0>%1</font><br/>").arg(text2Integer(iLen,emTextFormat,emLengthType,pszSourceText + iDealIndex,!bIsBigEndian)));
         iDealIndex += iLen * emTextFormat;
     }
     //4 循环体类型 需要有 loopNum , loop*
@@ -659,7 +660,7 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
             {
                 iDealIndex += iLen*emTextFormat;
                 iLeftTextLen -= iLen*emTextFormat;
-                strOutPrintData.append(QString("%1\n").arg(lLoopNum));
+                strOutPrintData.append(QString("<font color=#A020F0>%1</font><br/>").arg(lLoopNum));
             }
         }
 
@@ -671,12 +672,12 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
                 qDebug() << "loop";
                 QJsonArray array(pArray->toArray());
                 if(strRemark.length())
-                    strOutPrintData.append("( %1 )\n").arg(strRemark);
+                    strOutPrintData.append("(<font color=green>%1</font>)<br/>").arg(strRemark);
                 else
-                    strOutPrintData.append("\n");
+                    strOutPrintData.append("<br/>");
                 for(int i = 0; i < lLoopNum; i++)
                 {
-                    strOutPrintData.append(QString("-----loop%1-----\n").arg(i+1));
+                    strOutPrintData.append(QString("-----loop%1-----<br/>").arg(i+1));
                     for(int j = 0; j < array.size(); j++)
                     {
                         QJsonObject Obj(array.at(j).toObject());
@@ -687,7 +688,7 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
                         break;
                 }
                 if(lLoopNum > 0)
-                    strOutPrintData.append("----------\n");
+                    strOutPrintData.append("<hr/><br/>");
             }
             else
             {
@@ -716,10 +717,10 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
         {
             iDealIndex += iLen*emTextFormat;
             iLeftTextLen -= iLen*emTextFormat;
-            strOutPrintData.append(QString("%1\n").arg(lRule));
+            strOutPrintData.append(QString("<font color=#A020F0>%1</font><br/>").arg(lRule));
         }
         if(strRemark.length())
-            strOutPrintData.append("( %1 )\n").arg(strRemark);
+            strOutPrintData.append("(<font color=green>%1</font>)<br/>").arg(strRemark);
 
         if(NULL == pArray)
         {
@@ -782,7 +783,7 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
             }
         }
         qDebug() << "pBuf" << pBuf;
-        strOutPrintData.append("\n");
+        strOutPrintData.append("<br/>");
         QJsonArray array(pArray->toArray());
         for(int i = 0 ; i < array.size();i++)
         {
