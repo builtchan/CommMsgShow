@@ -6,7 +6,7 @@
 #pragma execution_character_set("utf-8")
 CTextParse::CTextParse()
 {
-
+    m_pJsonRoot = NULL;
 }
 
 EM_TEXT_PARSE_RESULT CTextParse::TextParse(QString strJSONCfg,  const QString &strSourceText)
@@ -473,6 +473,7 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
             qDebug() << m_strErrorStr;
             return false;
         }
+        qDebug() << "remark" << value.toString();
         strRemark = value.toString();
     }
 
@@ -570,10 +571,14 @@ bool CTextParse::oneBlockDataParse(QJsonObject &jsonObject, const char *pszSourc
     {
         qDebug() << "按位处理" << iLen;
         unsigned long long llBit = text2Integer(iLen,emTextFormat,EM_LENGTH_TYPE_BIT,pszSourceText + iDealIndex ,!bIsBigEndian);
-        strOutPrintData.append(QString("%1<br/>").arg(llBit));
+        strOutPrintData.append(QString("%1").arg(llBit));
         iDealIndex += iLen *emTextFormat;
         iLeftTextLen -= iLen *emTextFormat;
         qDebug() << "该位数据" << llBit;
+        if(!strRemark.isEmpty())
+            strOutPrintData.append(QString("(<font color=green>%1</font>)<br/>").arg(strRemark));
+        else
+            strOutPrintData.append(QString("<br/>").arg(strRemark));
         return true;
     }
 

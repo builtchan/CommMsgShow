@@ -42,7 +42,16 @@ typedef enum
 //json中协议段 单个有效块的配置
 struct ST_PROTOCOL_DETAIL
 {
-    ST_PROTOCOL_DETAIL():emTextType(EM_TEXT_TYPE_RAW),iIsBigEndian(-1),emLenType(EM_LENGTH_TYPE_UNKNOWM),iIndex(0),iLoopNum(-1),bReverse(false){}
+    ST_PROTOCOL_DETAIL()
+    {
+        emTextType = EM_TEXT_TYPE_RAW;
+        iIsBigEndian = -1;
+        emLenType = EM_LENGTH_TYPE_UNKNOWM;
+        iIndex = 0;
+        iLoopNum = -1;
+        bReverse = false;
+        iLen = 0;
+    }
     QString strPrintName;       //字段表示名称（必须）
     QString strRemark;           //备注
     int iLen;                   //占用字节长度（必须）
@@ -171,6 +180,7 @@ private:
     QString m_strSourceText;
     QString m_strResult;
     QString m_strErrorStr;
+    void *m_pJsonRoot;
 };
 
 
