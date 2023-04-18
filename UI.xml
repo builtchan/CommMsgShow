@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIConfig>
+ <main heigth="600" width="800"/>
+ <menus>
+  <menu name="样例">
+   <menu jsonpath="example.json" name="example" key="example"/>
+   <menu jsonpath="Module/Printer.json" name="新北洋打印机" key="beiyangprinter"/>
+   <menu name="G60纸币">
+    <menu jsonpath="Module/G60Bill.json" name="IV纸币识别" key="IVBillAccept"/>
+    <menu jsonpath="Module/G60Bill.json" name="IVSend" key="IVSend"/>
+    <menu jsonpath="Module/G60Bill.json" name="ST状态响应" key="STResp"/>
+    <menu jsonpath="Module/G60Bill.json" name="FP初始化设置" key="FPInit"/>
+   </menu>
+   <menu name="华铭Token发行">
+    <menu jsonpath="Module/HmIssue.json" name="状态" key="status"/>
+   </menu>
+   <menu name="中软硬币">
+    <menu jsonpath="Module/CSSCoin.json" name="状态" key="cssCoinStatus"/>
+    <menu jsonpath="Module/CSSCoin.json" name="找零返回" key="ChangeResponse"/>
+   </menu>
+   <menu name="华铭token回收">
+    <menu jsonpath="Module/HmTokenRecycle.json" name="45状态" key="HMTokenStatus"/>
+   </menu>
+   <menu name="广电硬币CA006X">
+    <menu jsonpath="Module/GrgCA006XCoinUnit.json" name="88设置硬币金额" key="setCoinCount"/>
+    <menu jsonpath="Module/GrgCA006XCoinUnit.json" name="88设置返回" key="setCoinCountRev"/>
+    <menu jsonpath="Module/GrgCA006XCoinUnit.json" name="82返回" key="statusRet"/>
+   </menu>
+   <menu name="利亚德条屏">
+    <menu jsonpath="Module/LeyardDouble.json" name="02发送文本内容" key="sendtext"/>
+   </menu>
+   <menu name="富士通找零">
+    <menu jsonpath="Module/fujtsuChange.json" name="找零返回" key="FujtsuChangeRsv"/>
+    <menu jsonpath="Module/fujtsuChange.json" name="找零" key="FujtsuChangeSend"/>
+    <menu jsonpath="Module/fujtsuChange.json" name="状态" key="status"/>
+   </menu>
+   <menu name="广电回收">
+    <menu jsonpath="Module/GrgTru.json" name="82状态" key="status82"/>
+   </menu>
+  </menu>
+  <menu name="广州">
+   <menu name="数据文件">
+    <menu jsonpath="GZ/File/dataFile.json" name="收益数据" key="PROfile"/>
+   </menu>
+   <menu name="业务数据">
+    <menu jsonpath="GZ/bizData.json" name="结算数据" key="balanceData"/>
+    <menu jsonpath="GZ/bizData.json" name="硬币回收箱卸下数据" key="CoinBoxDownData"/>
+    <menu jsonpath="GZ/bizData.json" name="纸币回收箱卸下数据" key="BillRecycleBoxDownData"/>
+    <menu jsonpath="GZ/bizData.json" name="硬币补充数据" key="CoinSupplyData"/>
+    <menu jsonpath="GZ/bizData.json" name="硬币清空数据" key="CoinFlushData"/>
+    <menu jsonpath="GZ/bizData.json" name="单程票补充数据" key="TicketSupplyData"/>
+    <menu jsonpath="GZ/bizData.json" name="单程票清空数据" key="TicketFlushData"/>
+    <menu jsonpath="GZ/bizData.json" name="废票箱数据" key="WasteTicketData"/>
+    <menu jsonpath="GZ/bizData.json" name="闸机票箱数据" key="AgTicketData"/>
+    <menu jsonpath="GZ/bizData.json" name="纸币存入数据" key="BillSupplyData"/>
+    <menu jsonpath="GZ/bizData.json" name="纸币找零箱卸下数据" key="BillSpareBoxDownData"/>
+    <menu jsonpath="GZ/bizData.json" name="纸币废钞箱卸下数据" key="BillWasteBoxDownData"/>
+    <menu jsonpath="GZ/bizData.json" name="纸币存入数据" key="BillSupplyData"/>
+   </menu>
+   <menu name="sc报文">
+    <menu jsonpath="GZ/SC/communicate.json" name="sam卡钱包数值报告(42)" key="samInfoReport"/>
+    <menu jsonpath="GZ/SC/communicate.json" name="参数版本上报(52)" key="paramVersionReport"/>
+    <menu jsonpath="GZ/SC/communicate.json" name="控制命令(55)" key="deviceControl"/>
+    <menu jsonpath="GZ/SC/communicate.json" name="TVM状态上报（09）" key="tvmStatusUp"/>
+    <menu jsonpath="GZ/SC/communicate.json" name="Ag状态上报（09）" key="AgStatusUp"/>
+   </menu>
+   <menu name="读卡器">
+    <menu jsonpath="GZ/Module/tpu.json" name="出站交易0135交通部卡错误码9200" key="ExitTransJTB"/>
+    <menu jsonpath="GZ/Module/tpu.json" name="出站交易0135普通钱包交易错误码00" key="ExitTransNormal"/>
+   </menu>
+   <menu name="部件">
+    <menu name="华铭门单元">
+     <menu jsonpath="GZ/Module/HmGate.json" name="A0状态响应" key="HMGate_A0"/>
+    </menu>
+   </menu>
+  </menu>
+  <menu name="长沙">
+   <menu name="部件">
+    <menu name="读卡器">
+     <menu jsonpath="CS/Mobule/TPU.json" name="票卡分析结果" key="TicketAnalysis"/>
+     <menu jsonpath="CS/Mobule/TPU.json" name="出站UD" key="ExitUD"/>
+     <menu jsonpath="CS/Mobule/TPU.json" name="tcm获取票卡信息" key="tcmGetTicketInfo"/>
+     <menu jsonpath="CS/Mobule/TPU.json" name="充值发送0119" key="recharge"/>
+     <menu jsonpath="CS/Mobule/TPU.json" name="二维码寻卡信息" key="AgPollQRCode"/>
+     <menu jsonpath="CS/Mobule/TPU.json" name="获取sam卡信息" key="GetSamInfo"/>
+    </menu>
+   </menu>
+   <menu name="业务数据">
+    <menu jsonpath="CS/BizData.json" name="纸币钱箱更换数据" key="02BoxOperData"/>
+    <menu jsonpath="CS/BizData.json" name="业务9-13新业务数据" key="13NewBalanceData"/>
+    <menu jsonpath="CS/BizData.json" name="业务9-13结账数据" key="13Balance"/>
+    <menu jsonpath="CS/BizData.json" name="充值UD" key="RechargeUD"/>
+    <menu jsonpath="CS/BizData.json" name="第三方售票" key="ThirdSaltTicket"/>
+    <menu jsonpath="CS/BizData.json" name="互联网进出站交易UD数据" key="webTicketInfo"/>
+    <menu jsonpath="CS/BizData.json" name="闸机审计数据" key="AgAudiData"/>
+    <menu jsonpath="CS/BizData.json" name="进站UD" key="EntryUD"/>
+    <menu jsonpath="CS/BizData.json" name="出站UD" key="ExitUD"/>
+    <menu jsonpath="CS/BizData.json" name="售票UD" key="SaleUD"/>
+    <menu jsonpath="CS/BizData.json" name="Tvm审计数据" key="TvmAudiData"/>
+    <menu jsonpath="CS/BizData.json" name="车票存入数据" key="SupplyToken"/>
+    <menu jsonpath="CS/BizData.json" name="闸机票箱卸下数据" key="AgTicketBoxUnload"/>
+    <menu jsonpath="CS/BizData.json" name="寄存器数据" key="RegisterData"/>
+    <menu jsonpath="CS/BizData.json" name="Tvm硬币存入数据" key="SupplyCoin"/>
+    <menu jsonpath="CS/BizData.json" name="Tvm硬币清空" key="FlushCoin"/>
+    <menu jsonpath="CS/BizData.json" name="Tvm纸币回收箱卸下数据" key="billBoxDown"/>
+    <menu jsonpath="CS/BizData.json" name="09纸币找零补充" key="banknoteSupply09"/>
+   </menu>
+   <menu name="文件数据">
+    <menu jsonpath="CS/BizDataFile.json" name="闸机审计数据文件" key="AgAudiDataFile"/>
+    <menu jsonpath="CS/BizDataFile.json" name="Tvm审计数据文件" key="TvmAudiDataFile"/>
+   </menu>
+   <menu name="参数文件">
+    <menu jsonpath="CS/paramFile.json" name="0013操作员信息参数" key="param0013"/>
+    <menu jsonpath="CS/paramFile.json" name="0014操作员角色参数" key="param0014"/>
+   </menu>
+   <menu name="二维码原始数据">
+    <menu jsonpath="CS/QRCode.json" name="单程票进站状态码" key="ETicketEntryStruct"/>
+    <menu jsonpath="CS/QRCode.json" name="单程票已出站状态码" key="ETicketHasExitStruct"/>
+   </menu>
+  </menu>
+  <menu name="贵阳">
+   <menu name="部件">
+    <menu name="发行">
+     <menu name="接收报文">
+      <menu jsonpath="GY/Module/Issue.json" name="状态" key="receiveStatus"/>
+     </menu>
+    </menu>
+    <menu name="读卡器">
+     <menu jsonpath="GY/Module/tpu.json" name="二维码票返回" key="qrcodeticket"/>
+     <menu jsonpath="GY/Module/tpu.json" name="票卡分析" key="TcmGetTicketInfo"/>
+     <menu jsonpath="GY/Module/tpu.json" name="5023充值交易明细报文" key="5023YKTRecharge"/>
+     <menu jsonpath="GY/Module/tpu.json" name="一卡通充值" key="yktrecharge"/>
+     <menu jsonpath="GY/Module/tpu.json" name="进站报文" key="AgEntry"/>
+    </menu>
+    <menu name="广电票卡回收">
+     <menu jsonpath="GY/Module/GrgRecycle.json" name="32状态" key="status"/>
+    </menu>
+   </menu>
+   <menu name="设备业务数据">
+    <menu jsonpath="GY/GYBizData.json" name="7001结算数据" key="7001"/>
+    <menu jsonpath="GY/GYBizData.json" name="7002收益数据" key="7002"/>
+    <menu jsonpath="GY/GYBizData.json" name="现金箱更换" key="billRecycle"/>
+    <menu jsonpath="GY/GYBizData.json" name="ypt充值数据" key="yptRecharge"/>
+    <menu jsonpath="GY/GYBizData.json" name="一卡通充值交易数据格式" key="yktRecharge"/>
+    <menu jsonpath="GY/GYBizData.json" name="售票交易数据" key="saltTicket"/>
+    <menu jsonpath="GY/GYBizData.json" name="交通部一卡通充值交易" key="jtbYktRecharge"/>
+    <menu jsonpath="GY/GYBizData.json" name="一票通非单程票交易数据格式" key="YPTCardTransData"/>
+    <menu jsonpath="GY/GYBizData.json" name="单程票交易数据格式" key="ticketTransData"/>
+    <menu jsonpath="GY/GYBizData.json" name="一卡通消费交易数据格式" key="YPTTransData"/>
+    <menu jsonpath="GY/GYBizData.json" name="交通部一卡通交易数据格式" key="jtbYKTTransData"/>
+    <menu jsonpath="GY/GYBizData.json" name="人脸票交易数据格式" key="faceTransData"/>
+   </menu>
+   <menu name="sc报文">
+    <menu jsonpath="GY/SCMsg.json" name="Tvm状态上报" key="tvmStatusUp"/>
+   </menu>
+  </menu>
+  <menu name="智慧客服">
+   <menu jsonpath="Customer.json" name="更新获取卡分析结果" key="compensateCardAnalyse"/>
+   <menu jsonpath="Customer.json" name="0b04更新请求" key="0b04Compensate"/>
+   <menu jsonpath="Customer.json" name="0303查询响应" key="0303Resp"/>
+   <menu jsonpath="Customer.json" name="补登" key="1201"/>
+   <menu jsonpath="Customer.json" name="身份证信息" key="IdentityCard"/>
+   <menu jsonpath="Customer.json" name="电子发票" key="EInvoice"/>
+   <menu jsonpath="Customer.json" name="0204充值请求" key="recharge0204"/>
+  </menu>
+  <menu name="重庆">
+   <menu name="业务数据">
+    <menu jsonpath="CQ/DataBiz.json" name="262" key="262"/>
+    <menu jsonpath="CQ/DataBiz.json" name="263" key="263"/>
+    <menu jsonpath="CQ/DataBiz.json" name="243" key="243"/>
+    <menu jsonpath="CQ/DataBiz.json" name="Biz_7005" key="Biz_7005"/>
+   </menu>
+   <menu name="参数">
+    <menu jsonpath="CQ/param.json" name="3007线路名称表" key="param3007"/>
+   </menu>
+   <menu name="部件">
+    <menu name="广电发行">
+     <menu jsonpath="CQ/Module/GrgIssue.json" name="82状态返回" key="status82"/>
+    </menu>
+   </menu>
+  </menu>
+  <menu name="深圳">
+   <menu name="业务数据">
+    <menu jsonpath="SZ/BigData.log.json" name="钱箱操作" key="cashBoxOper"/>
+    <menu jsonpath="SZ/BigData.log.json" name="票箱操作" key="ticketBoxOperData"/>
+    <menu jsonpath="SZ/BigData.log.json" name="221出站交易数据" key="AGExitData"/>
+    <menu jsonpath="SZ/BigData.log.json" name="241充值交易数据" key="241Data"/>
+    <menu jsonpath="SZ/BigData.log.json" name="262" key="262Data"/>
+    <menu jsonpath="SZ/BigData.log.json" name="211进站交易" key="211Data"/>
+   </menu>
+  </menu>
+  <menu name="厦门">
+   <menu name="参数">
+    <menu jsonpath="XM/Param.json" name="广告参数0901" key="Param0901"/>
+   </menu>
+   <menu name="业务数据">
+    <menu jsonpath="XM/BizData.json" name="结算数据" key="balanceData"/>
+   </menu>
+  </menu>
+  <menu name="CZ">
+   <menu jsonpath="CZ/data.json" name="二维码数据" key="QRCodeData"/>
+  </menu>
+ </menus>
+</UIConfig>

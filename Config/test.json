@@ -1,0 +1,239 @@
+{
+
+    "description0": "解析配置格式说明请在软件'管理'->'说明'查阅。type：[0:原文 1:字符串 2:整型 3:循环体 4:变长 5:按位处理]",
+    "AgAudiDataFile": [
+        {
+            "length": 4,
+            "name": "设备编号",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "重复次数",
+            "type": 2
+        },
+        {
+            "length": 6,
+            "name": "无用",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "操作日期",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "单程票票箱取出次数",
+            "type": 2
+        },
+        {
+            "array": [
+                {
+                    "length": 2,
+                    "name": "交易类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "支付类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "票卡类型",
+                    "type": 0
+                },
+                {
+                    "length": 4,
+                    "name": "交易数量",
+                    "type": 2
+                },
+                {
+                    "length": 4,
+                    "name": "交易金额",
+                    "type": 2
+                }
+            ],
+            "index": 0,
+            "length": 1,
+            "name": "重复次数",
+            "type": 3
+        },
+        {
+            "length": 6,
+            "name": "无用",
+            "type": 0
+        },
+        {
+            "length": 12,
+            "name": "校验",
+            "type": 1
+        }
+    ],
+    "TvmAudiDataFile": [
+        {
+            "length": 4,
+            "name": "设备编号",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "重复次数",
+            "type": 2
+        },
+        {
+            "length": 6,
+            "name": "无用",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "操作日期",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编码",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "补充Token数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "补充硬币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "补充硬币金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "清空Token数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "清空硬币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "清空硬币金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "回收硬币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "回收硬币金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "回收纸币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "回收纸币金额",
+            "type": 2
+        },
+        {
+            "array": [
+                {
+                    "length": 2,
+                    "name": "交易类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "支付类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "票卡类型",
+                    "type": 0
+                },
+                {
+                    "length": 4,
+                    "name": "交易数量",
+                    "type": 2
+                },
+                {
+                    "length": 4,
+                    "name": "交易金额",
+                    "type": 2
+                }
+            ],
+            "index": 0,
+            "length": 1,
+            "name": "重复次数",
+            "type": 3
+        },
+        {
+            "length": 6,
+            "name": "无用",
+            "type": 0
+        },
+        {
+            "length": 12,
+            "name": "校验",
+            "type": 1
+        }
+    ]
+}

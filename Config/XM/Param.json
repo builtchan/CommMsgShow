@@ -1,0 +1,1 @@
+{	"description0": "解析配置格式说明请在软件'管理'->'说明'查阅。type：[0:原文 1:字符串 2:整型 3:循环体 4:变长 5:按位处理]",            	"Param0901":[		{"name":"广告播放设置数量","length":4,"type":2},		{"name":"广告播放设置数量","length":4,"type":3,"index":-4,"array":[			{"name":"播放节点ID","length":4,"type":0},			{"name":"广告信息ID","length":4,"type":0}		]}	]            }

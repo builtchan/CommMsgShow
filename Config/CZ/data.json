@@ -1,0 +1,41 @@
+{
+	"description0": "解析配置格式说明请在软件'管理'->'说明'查阅。type：[0:原文 1:字符串 2:整型 3:循环体 4:变长 5:按位处理]",            
+	"QRCodeData":[
+		{"name":"二维码头","length":-1,"type":0},
+		{"name":"二维码结构版本","length":1,"type":0},
+		{"name":"二维码数据长度","length":2,"type":2,"bigEndian":true},
+		{"name":"二维码生成方式","length":1,"type":0},
+		{"name":"所在城市标志","length":3,"type":0},
+		
+		
+		{"name":"行业数据域","length":-1,"type":0},
+		{"name":"移动应用标识","length":8,"type":0},
+		{"name":"用户标识","length":8,"type":0},
+		{"name":"二维码有效时长","length":2,"type":2,"bigEndian":true},
+		{"name":"行业使用范围","length":1,"type":0},
+		{"name":"用户票种类型","length":1,"type":0},
+		{"name":"行业授权过期时间","length":4,"type":2,"bigEndian":true},
+		{"name":"行业自定义数据长度","length":1,"type":0},
+		{"name":"行业自定义数据","length":1,"index":-1,"type":4,"lengthType":1,"array":[
+			{"name":"行业自定义数据","length":15,"type":0}
+		]},
+		{"name":"","length":-1,"type":0},
+		{"name":"应用用户公钥长度","length":1,"type":0},
+		{"name":"应用用户公钥","length":64,"type":0},
+		{"name":"行业授权签名秘钥索引","length":2,"type":0},
+		{"name":"行业授权签名长度","length":1,"type":0},
+		{"name":"行业授权签名","length":64,"type":0},
+
+		{"name":"用户数据域","length":-1,"type":0},
+		{"name":"二维码凭证号","length":8,"type":0},
+		{"name":"二维码生成时间","length":4,"type":2,"bigEndian":true},
+		{"name":"应用自定义数据长度","length":1,"type":0},
+		{"name":"行业自定义数据","length":1,"index":-1,"type":4,"lengthType":1,"array":[
+			{"name":"行业自定义数据","length":9,"type":0}
+		]},
+		{"name":"","length":-1,"type":0},
+		{"name":"应用用户签名长度","length":1,"type":0},
+		{"name":"应用用户签名","length":64,"type":0}
+		
+	]            
+}

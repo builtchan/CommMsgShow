@@ -1,0 +1,59 @@
+{
+    "description0": "解析配置格式说明请在软件'管理'->'说明'查阅",
+    "example": [
+        {
+            "length": 4,
+            "name": "原始数据",
+            "type": 0
+        },
+        {
+            "length": 11,
+            "name": "转成字符串",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "转成整型",
+            "type": 2
+        },
+        {
+            "array": [
+                {
+                    "length": 1,
+                    "name": "inloop1",
+                    "type": 0
+                },
+                {
+                    "bigEndian": true,
+                    "length": 2,
+                    "name": "inloop2",
+                    "type": 2
+                }
+            ],
+            "index": 0,
+            "length": 2,
+            "name": "循环体",
+            "type": 3
+        },
+        {
+            "array": [
+                {
+                    "length": 1,
+                    "lengthType": 3,
+                    "name": "1",
+                    "type": 0
+                },
+                {
+                    "length": 1,
+                    "lengthType": 3,
+                    "name": "2",
+                    "type": 0
+                }
+            ],
+            "index": 0,
+            "length": 1,
+            "name": "不定长（暂支持0和有长度）",
+            "type": 4
+        }
+    ]
+}

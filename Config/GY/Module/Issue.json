@@ -1,0 +1,278 @@
+{
+	"description0": "解析配置格式说明请在软件'管理'->'说明'查阅。type：[0:原文 1:字符串 2:整型 3:循环体 4:变长 5:按位处理]",
+	"receiveStatus": [{
+			"name": "命令",
+			"length": 1,
+			"type": 0
+		}, {
+			"name": "序号",
+			"length": 1,
+			"type": 2,
+			"lengthType": 2
+		}, {
+			"name": "长度",
+			"length": 1,
+			"type": 2,
+			"lengthType": 1
+		}, {
+			"name": "D0",
+			"length": 1,
+			"type": 5,
+			"array": [{					"name": "发送",					"length": 1,					"remark":"0-非复位完成后发送 1-复位完成后发送",					"type": 0				},{					"name": "电机升降故障（不可恢复）",					"length": 1,					"type": 0				},{					"name": "走票故障（不可恢复）",					"length": 1,					"type": 0				},{					"name": "电磁铁到位异常（不可恢复）",					"length": 1,					"type": 0				},{					"name": "对射传感器故障（可恢复）",					"length": 1,					"type": 0				},{					"name": "废票箱异常（可恢复）",					"length": 1,					"type": 0				},{					"name": "发票箱就绪异常（可恢复）",					"length": 1,					"type": 0				},{
+					"name": "设备故障",
+					"length": 1,
+					"type": 0
+				}
+			]
+		}, {			"name": "D1",			"length": 1,			"type": 5,			"array": [{					"name": "票箱1升降到位",					"length": 1,					"type": 0				}, {					"name": "票箱1电子ID读到",					"length": 1,					"type": 0				}, {					"name": "票箱1盖板到位",					"length": 1,					"type": 0				}, {					"name": "票箱1可发票",					"length": 1,					"type": 0				}, {					"name": "票箱2升降到位",					"length": 1,					"type": 0				}, {					"name": "票箱2电子ID读到",					"length": 1,					"type": 0				}, {					"name": "票箱2盖板到位",					"length": 1,					"type": 0				},{					"name": "票箱2可发票",					"length": 1,					"type": 0				} 			]		}, {			"name": "D2",			"length": 1,			"type": 5,			"reverse":true,			"array": [{					"name": "整机到位",					"length": 1,					"type": 0				}, {					"name": "票箱2为工作票箱",					"length": 1,					"type": 0				}, {					"name": "票箱1为工作票箱",					"length": 1,					"type": 0				}, {					"name": "读卡区有票",					"length": 1,					"type": 0				}, {					"name": "暂存有票",					"length": 1,					"type": 0				}, {					"name": "发票使能位",					"length": 1,					"type": 0				}, {					"name": "电机使能位",					"length": 1,					"type": 0				},{					"name": "预留",					"length": 1,					"type": 0				} 			]		}, {
+			"name": "D3",
+			"length": 1,
+			"type": 5,
+			"reverse":true,
+			"array": [{
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "1——票箱1拨动开关在下位,0——票箱1拨动开关在上位",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱1下限传感器有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱1计数传感器有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱1将完传感器有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱1微动开关有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱1上限传感器有信号",
+					"length": 1,
+					"type": 0
+				},{
+					"name": "票箱1盖板打开",
+					"length": 1,
+					"type": 0
+				} 
+			]
+		}, {
+			"name": "D4",
+			"length": 1,
+			"type": 0,
+			"remark":"票箱1计数磁性开关计数值"
+		}, {
+			"name": "D5",
+			"length": 1,
+			"type": 5,
+			"reverse":true,
+			"array": [{
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "1——票箱2拨动开关在下位,0——票箱1拨动开关在上位",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2下限传感器有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2计数传感器有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2将完传感器有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2微动开关有信号",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2上限传感器有信号",
+					"length": 1,
+					"type": 0
+				},{
+					"name": "票箱2盖板打开",
+					"length": 1,
+					"type": 0
+				} 
+			]
+		}, {
+			"name": "D6",
+			"length": 1,
+			"type": 0,
+			"remark":"票箱2计数磁性开关计数值"
+		}, {
+			"name": "D7",
+			"length": 1,
+			"type": 5,
+			"reverse":true,
+			"array": [{
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "废票翻板电磁铁到位",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "废票箱未满",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "废票箱盖板到位",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "废票箱电子ID读到",
+					"length": 1,
+					"type": 0
+				},{
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				} 
+			]
+		}, {
+			"name": "D8",
+			"length": 1,
+			"type": 5,
+			"reverse":true,
+			"array": [{
+					"name": "1——票箱2空,0——票箱1不空或未就绪而无法判断",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "1——票箱1空,0——票箱1不空或未就绪而无法判断",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "6号INFS遮挡",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "5号INFS遮挡",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "4号INFS遮挡",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "3号INFS遮挡",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "2号INFS遮挡",
+					"length": 1,
+					"type": 0
+				},{
+					"name": "1号INFS遮挡",
+					"length": 1,
+					"type": 0
+				} 
+			]
+		}, {
+			"name": "D9",
+			"length": 1,
+			"type": 5,
+			"reverse":true,
+			"array": [{
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "读卡区退票故障",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "读卡区出票故障",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "读卡区上票故障",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "暂存区上票故障",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2刮票故障",
+					"length": 1,
+					"type": 0
+				},{
+					"name": "票箱1刮票故障",
+					"length": 1,
+					"type": 0
+				} 
+			]
+		}, {
+			"name": "D10",
+			"length": 1,
+			"type": 0,
+			"remark":"走票故障位置代码"
+		}, {
+			"name": "D11",
+			"length": 1,
+			"type": 5,
+			"reverse":true,
+			"array": [{
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "预留",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2电机上升故障",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱2电机下降故障",
+					"length": 1,
+					"type": 0
+				}, {
+					"name": "票箱1电机上升故障",
+					"length": 1,
+					"type": 0
+				},{
+					"name": "票箱1电机下降故障",
+					"length": 1,
+					"type": 0
+				} 
+			]
+		}
+	]
+}

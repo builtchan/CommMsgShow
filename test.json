@@ -1,0 +1,2170 @@
+{
+    "02BoxOperData": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "纸币箱编号",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "操作员",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "安装时间",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "取出时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "流水号",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 1 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 2 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 3 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 4 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 5 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 6 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 7 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 8 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 9 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 10 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 11 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 12 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 13 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 1 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 2 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 3 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 4 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 5 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 6 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 7 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 8 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 9 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 10 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 11 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 12 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 13 单位金额数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "总金额",
+            "type": 2
+        }
+    ],
+    "13Balance": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "开始时间",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "结束时间",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "票箱1发售总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "票箱2发售总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "充值总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币接收中金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币接收总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "更换纸币回收箱累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "更换硬币回收箱累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币箱结存总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币箱结存总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱1累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱2累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱1累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱2累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱1结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱2结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1清空累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2清空累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "清币结账后，硬币找零HOPPER1结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "清币结账后，硬币找零HOPPER2结存累计金额（单位：分）",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "已更换纸币找零回收箱的回收数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零回收箱回收结存数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1存入总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2存入总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1发售总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2发售总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1清空总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2清空总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1结存总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2结存总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票废票总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "TVM结存总金额",
+            "type": 2
+        }
+    ],
+    "13NewBalanceData": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "开始时间",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "结束时间",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "支付种类",
+            "type": 0
+        },
+        {
+            "array": [
+                {
+                    "length": 4,
+                    "name": "票箱1发售总金额",
+                    "type": 2
+                },
+                {
+                    "length": 4,
+                    "name": "票箱2发售总金额",
+                    "type": 2
+                },
+                {
+                    "length": 4,
+                    "name": "充值总金额",
+                    "type": 2
+                },
+                {
+                    "length": 1,
+                    "name": "支付方式",
+                    "type": 2
+                }
+            ],
+            "index": 0,
+            "length": 1,
+            "loopNum": 15,
+            "name": "",
+            "type": 3
+        },
+        {
+            "length": 4,
+            "name": "纸币接收总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币接收总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "更换纸币回收箱累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "更换硬币回收箱累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币箱结存总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币箱结存总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱1累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱2累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2累计补充总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱1累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱2累计找零总金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱1结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零箱2结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper1清空累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币hopper2清空累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "清币结账后，硬币找零HOPPER1结存累计金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "清币结账后，硬币找零HOPPER2结存累计金额（单位：分）",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "已更换纸币找零回收箱的回收数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币找零回收箱回收结存数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1存入总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2存入总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1发售总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2发售总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1清空总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2清空总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱1结存总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票箱2结存总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "单程票废票总数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "TVM结存总金额",
+            "type": 2
+        }
+    ],
+    "AgAudiData": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "操作日期",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "单程票票箱取出次数",
+            "type": 2
+        },
+        {
+            "array": [
+                {
+                    "length": 2,
+                    "name": "交易类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "支付类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "票卡类型",
+                    "type": 0
+                },
+                {
+                    "length": 4,
+                    "name": "交易数量",
+                    "type": 2
+                },
+                {
+                    "length": 4,
+                    "name": "交易金额",
+                    "type": 2
+                }
+            ],
+            "index": 0,
+            "length": 1,
+            "name": "重复次数",
+            "type": 3
+        }
+    ],
+    "AgTicketBoxUnload": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "操作员",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "票箱编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "存入流水号",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "车票类型",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "数量",
+            "type": 2
+        }
+    ],
+    "EntryUD": [
+        {
+            "length": 2,
+            "name": "交易类型",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "站点代码",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "设备类型",
+            "type": 1
+        },
+        {
+            "length": 3,
+            "name": "设备代码",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "Sam卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "Sam卡脱机交易流水号",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "票卡类型",
+            "type": 0
+        },
+        {
+            "length": 20,
+            "name": "票卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 20,
+            "name": "票卡物理卡号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "进站日期时间",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡状态代码",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "余额",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡应用标识",
+            "type": 1
+        },
+        {
+            "length": 3,
+            "name": "限制使用模式",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "限制进站代码",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "限制出站代码",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "进站工作模式",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "票卡扣款交易计数",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡应用模式",
+            "type": 0
+        }
+    ],
+    "ExitUD": [
+        {
+            "length": 2,
+            "name": "交易类型",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "站点代码",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "设备类型",
+            "type": 1
+        },
+        {
+            "length": 3,
+            "name": "设备代码",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "Sam卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "Sam卡脱机交易流水号",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "日期时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "票卡类型",
+            "type": 0
+        },
+        {
+            "length": 20,
+            "name": "票卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 20,
+            "name": "票卡物理卡号",
+            "type": 1
+        },
+        {
+            "length": 1,
+            "name": "卡状态代码",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "交易金额",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "余额",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "票卡充值交易金额",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "票卡扣款交易计数",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "支付类型",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "凭证ID",
+            "type": 0
+        },
+        {
+            "length": 10,
+            "name": "交易认证号",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "入口站点代码",
+            "type": 0
+        },
+        {
+            "length": 16,
+            "name": "入口sam逻辑卡号",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "进站日期时间",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "BOM班次序号",
+            "type": 0
+        },
+        {
+            "length": 16,
+            "name": "上次交易sam逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "上次交易日期时间",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "钱包交易金额",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡应用标识",
+            "type": 1
+        },
+        {
+            "length": 3,
+            "name": "限制使用模式",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "限制进站代码",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "限制出站代码",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "出站工作模式",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "城市代码",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "行业代码",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "TAC交易类型",
+            "type": 0
+        },
+        {
+            "length": 12,
+            "name": "TAC终端编号",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡应用模式",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "记录版本",
+            "type": 0
+        },
+        {
+            "length": 16,
+            "name": "发卡机构",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "密钥版本",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "密钥索引",
+            "type": 0
+        },
+        {
+            "length": 8,
+            "name": "伪随机数",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "算法标识",
+            "type": 0
+        },
+        {
+            "length": 40,
+            "name": "持卡人姓名",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "证件类型",
+            "type": 0
+        },
+        {
+            "length": 30,
+            "name": "证件号码",
+            "type": 0
+        },
+        {
+            "length": 8,
+            "name": "原卡类型字段",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "卡属地",
+            "type": 0
+        }
+    ],
+    "FlushCoin": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 2
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "操作员",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "硬币箱编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "流水号",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "硬币 Hopper 1 单位",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 Hopper 1 数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 Hopper 2 单位",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 Hopper 2 数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 1 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 2 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 3 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 4 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 5 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 6 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 7 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 8 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 1 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 2 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 3 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 4 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 5 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 6 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 7 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币 8 单位数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币金额",
+            "type": 2
+        }
+    ],
+    "RechargeUD": [
+        {
+            "length": 2,
+            "name": "交易类型",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "站点代码",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "设备类型",
+            "type": 1
+        },
+        {
+            "length": 3,
+            "name": "设备代码",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "Sam卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "Sam卡脱机交易流水号",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "日期时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "票卡类型",
+            "type": 0
+        },
+        {
+            "length": 20,
+            "name": "票卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 20,
+            "name": "票卡物理卡号",
+            "type": 1
+        },
+        {
+            "length": 1,
+            "name": "卡状态代码",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "交易金额",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "余额",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "票卡充值交易金额",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "票卡扣款交易计数",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "支付类型",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "凭证ID",
+            "type": 0
+        },
+        {
+            "length": 10,
+            "name": "交易认证号",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "入口站点代码",
+            "type": 0
+        },
+        {
+            "length": 16,
+            "name": "入口sam逻辑卡号",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "进站日期时间",
+            "type": 0
+        },
+        {
+            "length": 6,
+            "name": "操作员代码",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "BOM班次序号",
+            "type": 0
+        },
+        {
+            "length": 16,
+            "name": "上次交易sam逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "上次交易日期时间",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "钱包交易金额",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡应用标识",
+            "type": 1
+        },
+        {
+            "length": 3,
+            "name": "限制使用模式",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "限制进站代码",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "限制出站代码",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "出站工作模式",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "城市代码",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "行业代码",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "TAC交易类型",
+            "type": 0
+        },
+        {
+            "length": 12,
+            "name": "TAC终端编号",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡应用模式",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "记录版本",
+            "type": 0
+        },
+        {
+            "length": 16,
+            "name": "发卡机构",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "密钥版本",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "密钥索引",
+            "type": 0
+        },
+        {
+            "length": 8,
+            "name": "伪随机数",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "算法标识",
+            "type": 0
+        },
+        {
+            "length": 40,
+            "name": "持卡人姓名",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "证件类型",
+            "type": 0
+        },
+        {
+            "length": 30,
+            "name": "证件号码",
+            "type": 0
+        },
+        {
+            "length": 8,
+            "name": "原卡类型字段",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "卡属地",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "支付方式",
+            "type": 0
+        }
+    ],
+    "RegisterData": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 2
+        },
+        {
+            "length": 7,
+            "name": "时间",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "时间",
+            "type": 0
+        },
+        {
+            "array": [
+                {
+                    "length": 1,
+                    "name": "key",
+                    "type": 2
+                },
+                {
+                    "length": 4,
+                    "name": "value",
+                    "type": 2
+                }
+            ],
+            "index": 0,
+            "length": 1,
+            "name": "数量",
+            "type": 3
+        }
+    ],
+    "SaleUD": [
+        {
+            "length": 2,
+            "name": "交易类型",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "站点代码",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "设备类型",
+            "type": 1
+        },
+        {
+            "length": 3,
+            "name": "设备代码",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "Sam卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "Sam卡脱机交易流水号",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "日期时间",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "支付方式",
+            "type": 0
+        },
+        {
+            "length": 20,
+            "name": "支付票卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "单程票使用次数",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "票卡类型",
+            "type": 0
+        },
+        {
+            "length": 20,
+            "name": "票卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 20,
+            "name": "票卡物理卡号",
+            "type": 1
+        },
+        {
+            "length": 1,
+            "name": "单程票状态",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "充值金额",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "单程票卡类型",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "区段代码",
+            "type": 0
+        },
+        {
+            "length": 10,
+            "name": "MAC/TAC",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "成本押金",
+            "type": 0
+        },
+        {
+            "length": 6,
+            "name": "操作员代码",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "BOM班次序号",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "手续费",
+            "type": 0
+        },
+        {
+            "length": 1,
+            "name": "卡应用标识",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "TAC交易类型",
+            "type": 0
+        },
+        {
+            "length": 12,
+            "name": "TAC终端编号",
+            "type": 0
+        }
+    ],
+    "SupplyCoin": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 2
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 1,
+            "name": "硬币Hopper",
+            "type": 0
+        },
+        {
+            "length": 6,
+            "name": "操作员",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "流水号",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "硬币单位",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "硬币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "硬币金额",
+            "type": 2
+        }
+    ],
+    "SupplyToken": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 1,
+            "name": "票箱标识",
+            "type": 0
+        },
+        {
+            "length": 6,
+            "name": "操作员",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "票箱编号",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "存入流水号",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "车票类型",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "数量",
+            "type": 2
+        }
+    ],
+    "TvmAudiData": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 4,
+            "name": "操作日期",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编码",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "当前时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "补充Token数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "补充硬币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "补充硬币金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "清空Token数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "清空硬币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "清空硬币金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "回收硬币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "回收硬币金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "回收纸币数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "回收纸币金额",
+            "type": 2
+        },
+        {
+            "array": [
+                {
+                    "length": 2,
+                    "name": "交易类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "支付类型",
+                    "type": 1
+                },
+                {
+                    "length": 2,
+                    "name": "票卡类型",
+                    "type": 0
+                },
+                {
+                    "length": 4,
+                    "name": "交易数量",
+                    "type": 2
+                },
+                {
+                    "length": 4,
+                    "name": "交易金额",
+                    "type": 2
+                }
+            ],
+            "index": 0,
+            "length": 1,
+            "name": "重复次数",
+            "type": 3
+        }
+    ],
+    "banknoteSupply09": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 0
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 1,
+            "name": "纸币箱类型",
+            "type": 0
+        },
+        {
+            "length": 16,
+            "name": "纸币箱编号",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "操作员",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "补充时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "流水号",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "面额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "金额",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "总金额",
+            "type": 2
+        }
+    ],
+    "billBoxDown": [
+        {
+            "length": 1,
+            "name": "数据类型",
+            "type": 2
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "纸币箱编号",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "操作员",
+            "type": 1
+        },
+        {
+            "length": 7,
+            "name": "安装时间",
+            "type": 0
+        },
+        {
+            "length": 7,
+            "name": "卸下时间",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "流水号",
+            "type": 0
+        },
+        {
+            "length": 2,
+            "name": "纸币 1 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 2 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 3 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 4 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 5 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 6 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 7 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 8 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 9 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 10 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 11 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 12 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 13 单位金额",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 1 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 2 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 3 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 4 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 5 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 6 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 7 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 8 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 9 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 10 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 11 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 12 单位数量",
+            "type": 2
+        },
+        {
+            "length": 2,
+            "name": "纸币 13 单位数量",
+            "type": 2
+        },
+        {
+            "length": 4,
+            "name": "纸币金额",
+            "type": 2
+        }
+    ],
+    "description0": "解析配置格式说明请在软件'管理'->'说明'查阅。type：[0:原文 1:字符串 2:整型 3:循环体 4:变长 5:按位处理]",
+    "webTicketInfo": [
+        {
+            "length": 8,
+            "name": "运营日期",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "交易类型",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "车票主类型",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "车票类型",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "票卡芯片类型",
+            "type": 1
+        },
+        {
+            "length": 20,
+            "name": "票卡逻辑卡号",
+            "type": 1
+        },
+        {
+            "length": 32,
+            "name": "中心票号",
+            "type": 1
+        },
+        {
+            "length": 8,
+            "name": "中心校验码",
+            "type": 1
+        },
+        {
+            "length": 14,
+            "name": "有效出站时间",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "取票交易实卡号",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "取票交易",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "票卡CSN",
+            "type": 1
+        },
+        {
+            "length": 10,
+            "name": "票卡计数器",
+            "type": 1
+        },
+        {
+            "length": 16,
+            "name": "PSAM卡号",
+            "type": 1
+        },
+        {
+            "length": 10,
+            "name": "PSAM卡流水号",
+            "type": 1
+        },
+        {
+            "length": 14,
+            "name": "交易日期",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "支付方式",
+            "type": 1
+        },
+        {
+            "length": 10,
+            "name": "交易前票值",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "交易次数",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "交易金额",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "优惠金额",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "当前车站编码",
+            "type": 1
+        },
+        {
+            "length": 4,
+            "name": "上次车站编码",
+            "type": 1
+        },
+        {
+            "length": 14,
+            "name": "上次使用时间",
+            "type": 1
+        },
+        {
+            "length": 9,
+            "name": "设备编号",
+            "type": 1
+        },
+        {
+            "length": 10,
+            "name": "终端设备流水号",
+            "type": 1
+        },
+        {
+            "length": 2,
+            "name": "测试交易标记",
+            "type": 1
+        },
+        {
+            "length": 8,
+            "name": "二维码序号？",
+            "type": 1
+        },
+        {
+            "length": 6,
+            "name": "超出费用",
+            "type": 1
+        },
+        {
+            "length": 8,
+            "name": "TAC",
+            "type": 1
+        },
+        {
+            "length": 64,
+            "name": "互联网订单号",
+            "type": 1
+        },
+        {
+            "length": 32,
+            "name": "预留",
+            "type": 1
+        }
+    ]
+}

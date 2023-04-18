@@ -1,0 +1,59 @@
+{
+	"description0": "解析配置格式说明请在软件'管理'->'说明'查阅。type：[0:原文 1:字符串 2:整型 3:循环体 4:变长 5:按位处理]",         
+	"status82":[
+		{"name":"","length":2,"type":0},
+		{"name":"响应码","length":1,"type":0},
+		{"name":"执行结果","length":1,"type":1},
+		{"name":"序号","length":1,"type":0},
+		{"name":"错误码","length":1,"type":0},
+		{"name":"传感器 1 ","length":1,"type":5,"reverse":true,"array":[
+			{"name":"预留","length":1,"type":0},
+			{"name":"预留","length":1,"type":0},
+			{"name":"回收箱C磁铁传感器(预留)(0.遮挡; 1.不遮挡)","length":1,"type":0},
+			{"name":"回收箱B磁铁传感器(0.遮挡; 1.不遮挡)","length":1,"type":0},
+			{"name":"回收箱A磁铁传感器(预留)(0.遮挡; 1.不遮挡)","length":1,"type":0},
+			{"name":"读写区磁铁传感器(0.遮挡; 1.不遮挡)","length":1,"type":0},
+			{"name":"退还口磁铁传感器(0.遮挡; 1.不遮挡)","length":1,"type":0},
+			{"name":"投入口磁铁传感器(0.遮挡; 1.不遮挡)","length":1,"type":0}
+		]},
+		{"name":"传感器 2","length":1,"type":5,"reverse":true,"array":[
+			{"name":"预留","length":1,"type":0},
+			{"name":"预留","length":1,"type":0},
+			{"name":"回收箱C通道传感器(0.不遮挡; 1.遮挡)","length":1,"type":0},
+			{"name":"回收箱B通道传感器(0.不遮挡; 1.遮挡)","length":1,"type":0},
+			{"name":"回收箱A通道传感器(0.不遮挡; 1.遮挡)","length":1,"type":0},
+			{"name":"读写通道传感器(0.不遮挡; 1.遮挡)","length":1,"type":0},
+			{"name":"退还通道传感器(0.不遮挡; 1.遮挡)","length":1,"type":0},
+			{"name":"投入通道传感器(0.不遮挡; 1.遮挡)","length":1,"type":0}
+		]},
+		{"name":"传感器 3","length":1,"type":5,"reverse":true,"array":[
+			{"name":"预留","length":1,"type":0},
+			{"name":"预留","length":1,"type":0},
+			{"name":"预留","length":1,"type":0},
+			{"name":"预留","length":1,"type":0},
+			{"name":"预留","length":1,"type":0},
+			{"name":"回收箱C到位开关(预留)(0.未按下; 1.按下)","length":1,"type":0},
+			{"name":"回收箱B到位开关(0.未按下; 1.按下)","length":1,"type":0},
+			{"name":"回收箱A到位开关(0.未按下; 1.按下)","length":1,"type":0}
+		]},
+		{"name":"传感器 4","length":1,"type":5,"reverse":true,"array":[
+			{"name":"电磁铁电源状态(0.正常; 1.断电)","length":1,"type":0},
+			{"name":"自动接收状态(0.空闲; 1.忙碌)","length":1,"type":0},
+			{"name":"接收状态(内部)(0.禁止接收; 1.允许接收)","length":1,"type":0},
+			{"name":"EEPROM部件状态(0.正常; 1.出错)","length":1,"type":0},
+			{"name":"接收状态(0.禁止接收; 1.允许接收)","length":1,"type":0},
+			{"name":"回收箱C部件状态(0.未检测到回收箱; 1.检测到回收箱)","length":1,"type":0},
+			{"name":"回收箱B部件状态(0.未检测到回收箱; 1.检测到回收箱)","length":1,"type":0},
+			{"name":"回收箱A部件状态(0.未检测到回收箱; 1.检测到回收箱)","length":1,"type":0}
+		]},
+		{"name":"回收箱A票卡个数","length":2,"type":2},
+		{"name":"回收箱B票卡个数","length":2,"type":2},
+		{"name":"回收箱C票卡个数（预留）","length":2,"type":2},
+		{"name":"退出票卡个数	","length":2,"type":2},
+		{"name":"总票卡个数","length":2,"type":2},
+		{"name":"问题票卡个数","length":2,"type":2},
+		{"name":"读写区票卡个数","length":2,"type":2},
+		{"name":"预留","length":2,"type":2},
+		{"name":"预留","length":2,"type":2}
+	]            
+}
